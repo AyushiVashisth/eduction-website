@@ -1,0 +1,77 @@
+/* OurCampus.css */
+.our-campus {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.our-campus h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.image-item {
+  border-radius: 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+  border: 4px solid transparent;
+}
+
+.image-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.08);
+}
+
+.image-item:nth-child(odd) {
+  border-top-color: #3498db;
+  border-left-color: #3498db;
+  border-bottom-color: #e74c3c;
+  border-right-color: #e74c3c;
+}
+
+.image-item:nth-child(even) {
+  border-top-color: #e74c3c;
+  border-left-color: #e74c3c;
+  border-bottom-color: #3498db;
+  border-right-color: #3498db;
+}
+
+.image-item:nth-child(odd),
+.image-item:nth-child(even) {
+  border-width: 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,108 @@
+/* ContactUs.css */
+
+.contact-us-section {
+  background-color: #27292a;
+  margin-top: 60px;
+  padding: 30px;
+}
+
+.contact-us {
+  text-align: center;
+  padding: 20px;
+  background-color: #161616;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgb(244, 201, 83);
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-us h2 {
+  margin-bottom: 30px;
+  color: rgb(244, 201, 83);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2b2b2b;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  background-color: #3b3b3b;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(244, 201, 83);
+  color: #161616;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #b3aa48;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us {
+    width: 90%;
+    max-width: none;
+    padding: 30px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us {
+    padding: 20px;
+  }
+
+  .contact-us h2 {
+    font-size: 24px;
+  }
+}
